@@ -15,7 +15,7 @@ public class EventService
         }
     }
 
-    public EventController OnLightSwitchToggled;
+    public EventController OnLightSwitchToggled {  get; private set; }
 
     public EventService()
     {
