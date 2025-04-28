@@ -87,4 +87,9 @@ public class PlayerController
             playerState = PlayerState.InDark;
         }
     }
+
+    ~PlayerController()
+    {
+        LightSwitchView.lightSwitch += OnLightSwitchToggled;
+    }
 }
